@@ -1,0 +1,35 @@
+.menu{
+    /* 버튼으로 기능할 menu의 기본적인 지정 */
+    background: url(./menu.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu.active {
+    background: url(./cancel.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 999;
+    top: 10px;
+    right: 30px;
+}
+
+.side-menu{
+    display: none;
+}
+
+.side-menu.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
